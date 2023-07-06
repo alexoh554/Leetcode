@@ -1,3 +1,5 @@
+// Use a queue to store each character
+
 class Solution {
 public:
     bool isValid(string s) {

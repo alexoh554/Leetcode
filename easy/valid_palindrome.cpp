@@ -1,5 +1,5 @@
 #include <cctype>
-
+// Simple compariosn starting from each end; skip letter if not valid
 class Solution {
 public:
     bool isPalindrome(string s) {

@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+// Recursive solution, call invertTree on itself until you get to end (nullptr)
+
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
