@@ -7,17 +7,18 @@
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if root is None:
-            # base case
             return
-        
+
         self.invertTree(root.left)
         self.invertTree(root.right)
-        
-        # Swap children
-        temp = root.left
-        root.left = root.right
-        root.right = temp
+
+        self.swapChildren(root)
 
         return root
+    
 
+    def swapChildren(self, parent):
+        temp = parent.left
+        parent.left = parent.right
+        parent.right = temp
         
